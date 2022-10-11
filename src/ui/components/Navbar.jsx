@@ -4,7 +4,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 export const Navbar = () => {
 
     const navigate = useNavigate()
-    console.log(navigate)
+    // console.log(navigate)
 
     const onLogout = (event) => {
       // usando el custum hook useNavigate hacemos redirect a login
