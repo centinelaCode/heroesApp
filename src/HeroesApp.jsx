@@ -1,10 +1,8 @@
-import AppRouter from "./router/AppRouter"
+import { AppRouter } from "./router/AppRouter"
 
 
-const HeroesApp = () => {
+export const HeroesApp = () => {
   return (
     <AppRouter />
   )
 }
-
-export default HeroesApp
