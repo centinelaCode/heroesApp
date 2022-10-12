@@ -38,7 +38,8 @@ export const HeroPage = () => {
   return (
     <>
       <div className="row mt-5">
-        <div className="col-4">
+        {/* animate__pulse */}
+        <div className="col-4 animate__animated animate__slideInLeft">
           <img 
             src={`/assets/heroes/${ hero.id }.jpg`} 
             alt={ hero.superhero}
@@ -56,10 +57,10 @@ export const HeroPage = () => {
           <p>{ hero.characters }</p>
 
           <button 
-            className="btn btn-outline-primary"
+            className="btn btn-outline-primary btn-lg"
             onClick={ onNavigateBack }
           >
-            Back
+            Back List {`${base.toUpperCase()}`}
           </button>
         </div>
       </div>
