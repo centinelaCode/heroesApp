@@ -6,7 +6,7 @@ export const getHeroesByName = ( name = '' ) => {
 
   //no existe termino de busqueda
   if( name.length === 0) return [];
-
+  
   // y filtramos lo que hacen match con la busqueda
-  return heroes.filter( hero => hero.superhero.toLocaleLowerCase() .includes(name) );
+  return heroes.filter( hero => hero.superhero.toLocaleLowerCase().includes(name) );  
 }
